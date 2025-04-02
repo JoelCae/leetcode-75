@@ -1,8 +1,8 @@
 title: LeetCode 75
 
 author:
-  name: "Joel Castillo"
-  email: "jocastillo@colmex.com"
+  name: Joel Castillo
+  email: jocastillo@colmex.com
 
 description: >
   Leetcode75 code problems
@@ -49,10 +49,3 @@ minima:
   #     * title    Tooltip rendered on hovering over icon.
   #     * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
   #     * url      Full URL of social profile.
-  social_links:
-    - title: Repository
-      icon: github
-      url: "https://github.com/JoelCae/leetcode-75"
-    - title: Website
-      icon: web
-      url: "https://joelcastillo.netlify.app"
