@@ -87,20 +87,6 @@ merg_str("","Hello")
 
     ## Warning in merg_str("", "Hello"): Length of world1 and world2 have to be > 0
 
-<button onclick="window.location.href=&#39;https://bing.com&#39;;">
-Click
-</button>
-
-<button onclick="window.location.href='https://bing.com';">Click</button>
-
-<div class="btn-group" role="group" aria-label="Basic example">
-
-<button onclick="window.location.href='https://bing.com';">Click</button>
-<a href="#link" class="btn btn-info" role="button">Link Button</a>
-<button type="button" class="btn btn-secondary">[Leetcode](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)</button>
-
-</div>
-
 [^1]: Email: <jocastillo@colmex.mx>. For more content visit my website:
     <https://joelcastillo.netlify.app> <br> If you have any questions or
     suggestions, I’d be grateful to receive your message.
