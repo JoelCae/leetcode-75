@@ -1,12 +1,1 @@
-# Site settings
-title: LeetCode 75
-email:
-description: 
-baseurl:
-url:
-twitter_username:
-github_username:  JoelCae
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+theme: jekyll-theme-minimal
