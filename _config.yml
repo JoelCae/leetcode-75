@@ -1,3 +1,5 @@
+remote_theme: "jekyll/minima@1e8a445"
+
 title: LeetCode 75
 
 author:
@@ -6,8 +8,6 @@ author:
 
 description: >
   Leetcode75 code problems
-
-theme: minima
 
 plugins:
   - jekyll-feed
