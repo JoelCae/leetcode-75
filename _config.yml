@@ -49,3 +49,8 @@ minima:
   #     * title    Tooltip rendered on hovering over icon.
   #     * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
   #     * url      Full URL of social profile.
+
+   social_links:
+    - title: Repository at GitHub
+      icon: github
+      url: "https://github.com/JoelCae/leetcode-75"
