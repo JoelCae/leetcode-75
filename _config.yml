@@ -1,3 +1,8 @@
+title: Your awesome title
+author:
+  name: Joel Castillo
+  email: jocastillo@colmex.mx
+
 remote_theme: jekyll/minima@d4d779a
 
 plugins:
@@ -17,7 +22,7 @@ minima:
   #     * solarized-light    Light variant of solarized color scheme.
   #     * solarized-dark     Dark variant of solarized color scheme.
   #     * solarized          Adaptive skin for solarized color scheme skins.
-  skin: dark
+  skin: classic
 
   # Specific pages for site navigation.
   #   If you wish to link only specific pages in the site-navigation, use this and list
@@ -25,4 +30,3 @@ minima:
   #   should be rendered.
   nav_pages:
     - about.md
-    - portfolio.md
