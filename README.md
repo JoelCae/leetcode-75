@@ -7,4 +7,3 @@ If you have any questions or suggestions, I’d be grateful to receive your mess
 
 ### Array / String
 - [01 Merge Strings Alternately](posts/01_1768_Merge_Strings_Alternately)
-- [02 SITE ](https://joelcastillo.netlify.app/posts/02_leetcode75/)
