@@ -5,7 +5,8 @@ categories: junk
 author:
 - "Joel Castillo Espinosa^1"
 meta: 
-modified_date: 
+modified_date:
+tags: ["Programmig", "R"]
 ---
 
 
