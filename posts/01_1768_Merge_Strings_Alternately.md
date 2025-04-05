@@ -1,10 +1,11 @@
 ---
 layout: post 
+title: "This post demonstrates post content styles"
 categories: junk
 author:
 - Joel Castillo Espinosa
-meta: 
-modified_date:
+meta: "hola"
+categories: Dos
 ---
 
 
