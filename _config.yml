@@ -1,4 +1,4 @@
-remote_theme: "jekyll/minima@1e8a445"
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
 
 title: LeetCode 75
 
