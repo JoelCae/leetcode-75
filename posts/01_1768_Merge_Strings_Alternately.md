@@ -3,7 +3,7 @@ layout: post
 title: "Merge Strings Alternately"
 categories: junk
 author:
-- "Joel Castillo Espinosa [^1]"
+- "Joel Castillo Espinosa^1"
 meta: 
 modified_date: 
 ---
