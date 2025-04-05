@@ -1,4 +1,5 @@
 ---
+layout: post 
 title: "Merge Strings Alternately"
 categories: junk
 author:
