@@ -1,4 +1,4 @@
-remote_theme: minima
+theme: minima
 
  nav_pages:
     - about.md
