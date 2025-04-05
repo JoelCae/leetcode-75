@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "This post demonstrates post content styles"
+title: "Merge Strings Alternately"
 categories: junk
 author:
-- Bart Simpson
-- Nelson Mandela Muntz
-meta: "Springfield"
-modified_date: 2016-05-27
+- Joel Castillo Espinosa [^1]
+meta: 
+modified_date: 
 ---
 
 
