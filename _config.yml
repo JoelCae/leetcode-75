@@ -1,2 +1,1 @@
-markdown: kramdown  # Tipo de markdown a usar
-theme: poole  # El tema que estás usando (Poole en este caso)
+remote_theme: poole/poole@master
