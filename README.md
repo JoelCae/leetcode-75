@@ -6,4 +6,4 @@ All solutions are programmed in R, and I use Rmarkdown to generate HTML and MD f
 If you have any questions or suggestions, I’d be grateful to receive your message. 
 
 ### Array / String
-- [01 Merge Strings Alternately](_posts/01_1768_Merge_Strings_Alternately.md)
+- [01 Merge Strings Alternately](posts/01_1768_Merge_Strings_Alternately.md)
