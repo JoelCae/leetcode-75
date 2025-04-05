@@ -1,3 +1,6 @@
+---
+layout: post
+---
 
 Joel Castillo Espinosa [^1]
 
