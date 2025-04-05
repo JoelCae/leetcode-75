@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "Merge Strings Alternately"
 categories: junk
 author:
-- "Joel Castillo Espinosa^1"
+- Joel Castillo Espinosa
 meta: 
 modified_date:
-tags: ["Programmig", "R"]
 ---
 
 
