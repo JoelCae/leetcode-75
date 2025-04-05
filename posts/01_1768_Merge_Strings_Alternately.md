@@ -1,15 +1,5 @@
----
-layout: post 
-title: "This post demonstrates post content styles"
-categories: junk
-author:
-- Joel Castillo Espinosa
-meta: "hola"
-categories: Dos
----
 
-
-Joel Castillo Espinosa [^1]
+by Joel Castillo Espinosa [^1]
 
 # 1768 Merge Strings Alternately [^2]
 
