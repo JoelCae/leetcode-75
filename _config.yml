@@ -32,7 +32,7 @@ minima:
   #   should be rendered.
   
 header_pages:
-  - about  
+  - page  
   - posts
   
   
