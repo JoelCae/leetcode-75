@@ -1,36 +1,8 @@
-title: Your awesome title
-author:
-  name: Joel Castillo
-  email: jocastillo@colmex.mx
-
-#theme: minima
-remote_theme: jekyll/minima@1e8a445
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-sass:
-  quiet_deps: true
-  silence_deprecations: [import]
-
-minima:
-  # Minima skin selection. Available skins are:
-  #   Available skins:
-  #     * classic            Default, light color scheme.
-  #     * dark               Dark variant of the classic skin.
-  #     * auto               Adaptive skin based on the default classic and dark skins.
-  #     * solarized-light    Light variant of solarized color scheme.
-  #     * solarized-dark     Dark variant of solarized color scheme.
-  #     * solarized          Adaptive skin for solarized color scheme skins.
-  skin: classic
-
-
-  # Specific pages for site navigation.
-  #   If you wish to link only specific pages in the site-navigation, use this and list
-  #   the `path` property (as represented via Liquid) of the pages in the order they
-  #   should be rendered.
-  
-
+title: "Mi Blog Personal"
+description: "Bienvenido a mi sitio Jekyll con el tema Lanyon"
+url: "https://TU_USUARIO.github.io"   # Cambia esto por tu URL de GitHub Pages
+baseurl: ""                          # Déjalo vacío si usas el dominio principal de GitHub Pages
+github: "https://github.com/TU_USUARIO" # Enlace a tu perfil de GitHub
+theme: "lanyon"
   
   
