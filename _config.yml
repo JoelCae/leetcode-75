@@ -1,6 +1,6 @@
-
-name: Joel Castillo
-email: jocastillo@colmex.mx
+author:
+  name: Joel Castillo
+  email: jocastillo@colmex.mx
 
 theme: minima
 #remote_theme: jekyll/minima@1e8a445
