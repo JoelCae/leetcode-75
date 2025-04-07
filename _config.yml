@@ -29,7 +29,7 @@ minima:
   #   If you wish to link only specific pages in the site-navigation, use this and list
   #   the `path` property (as represented via Liquid) of the pages in the order they
   #   should be rendered.
-
+minima:
   nav_pages:
     - about.md
 
