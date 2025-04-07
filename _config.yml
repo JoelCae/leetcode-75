@@ -14,6 +14,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-social_links:
-  - icon: github
-    url: "https://github.com/JoelCae/leetcode-75"
+minima:
+  social_links:
+    - title: Github repository
+      icon: github
+      url: "https://github.com/JoelCae/leetcode-75"
