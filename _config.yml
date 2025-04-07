@@ -3,7 +3,7 @@ author:
   name: Joel Castillo
   email: jocastillo@colmex.mx
 
-remote_theme: jekyll/minima@d4d779a
+remote_theme: jekyll/minima@1e8a445
 
 plugins:
   - jekyll-feed
