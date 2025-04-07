@@ -1,8 +1,8 @@
 title: "Mi Blog Personal"
 description: "Bienvenido a mi sitio Jekyll con el tema Lanyon"
-url: "https://TU_USUARIO.github.io"   # Cambia esto por tu URL de GitHub Pages
+url: "https://joelcae.github.io"   # Cambia esto por tu URL de GitHub Pages
 baseurl: ""                          # Déjalo vacío si usas el dominio principal de GitHub Pages
-github: "https://github.com/TU_USUARIO" # Enlace a tu perfil de GitHub
+github: "https://github.com/joelcae" # Enlace a tu perfil de GitHub
 theme: "lanyon"
   
   
