@@ -24,6 +24,8 @@ minima:
   #     * solarized-dark     Dark variant of solarized color scheme.
   #     * solarized          Adaptive skin for solarized color scheme skins.
   skin: classic
+  nav_pages:
+    - about.md
 
   # Specific pages for site navigation.
   #   If you wish to link only specific pages in the site-navigation, use this and list
