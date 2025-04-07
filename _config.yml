@@ -30,6 +30,5 @@ minima:
   #   the `path` property (as represented via Liquid) of the pages in the order they
   #   should be rendered.
   
-collections:
-  posts:
-    output: true
+header_pages:
+  - posts
