@@ -1,9 +1,10 @@
-remote_theme: chesterhow/tale
+author:
+  name: Joel Castillo
+  email: jocastillo@colmex.mx
 
-permalink:    /:year-:month-:day/:title
-paginate:     5
+#theme: minima
+remote_theme: jekyll/minima@1e8a445
 
 plugins:
-  - jekyll-paginate
-  - jekyll-remote-theme
-
+  - jekyll-feed
+  - jekyll-seo-tag
