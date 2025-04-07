@@ -1,3 +1,4 @@
+Author: Joel Castillo Espinosa [^1]
 # 1071 Greatest Common Divisor of Strings [^2]
 
 ## DESCRIPTION
