@@ -1,7 +1,5 @@
-
-by Joel Castillo Espinosa [^1]
-
 # 1768 Merge Strings Alternately [^2]
+by Joel Castillo Espinosa [^1]
 
 ## DESCRIPTION
 
@@ -86,12 +84,12 @@ merg_str("","Hello")
 
     ## Warning in merg_str("", "Hello"): Length of world1 and world2 have to be > 0
 
-[^1]: Email: <jocastillo@colmex.mx>. For more content visit my website:
+[^1]: This problem is originally from Leetdode, you can find it in
+    [Leetcode](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75).
+    
+[^2]: Email: <jocastillo@colmex.mx>. For more content visit my website:
     <https://joelcastillo.netlify.app> <br> If you have any questions or
     suggestions, I’d be grateful to receive your message.
-
-[^2]: This problem is originally from Leetdode, you can find it in
-    [Leetcode](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75).
 
 [^3]: This solution is entirely my authorship. I used R version 4.4.1
     (2024-06-14 ucrt).
