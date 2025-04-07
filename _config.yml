@@ -23,5 +23,7 @@ minima:
     - title: LinkenId
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/joel-castillo-espinosa"
-
+    - title: LinkenId
+      icon: "fas fa-globe"
+      url: "https://joelcastillo.netlify.app"
 
