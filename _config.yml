@@ -1,3 +1,5 @@
+title: LeetCode 75
+
 author:
   name: Joel Castillo
   email: jocastillo@colmex.mx
@@ -8,3 +10,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+social_links:
+  - title: Repository at GitHub
+    icon: github
+    url: "https://github.com/JoelCae/leetcode-75"
