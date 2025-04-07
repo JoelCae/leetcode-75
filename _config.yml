@@ -20,5 +20,8 @@ minima:
     - title: Github repository
       icon: github
       url: "https://github.com/JoelCae/leetcode-75"
+    - title: LinkenId
+      icon: linkenid
+      url: "www.linkedin.com/in/joel-castillo-espinosa"
 
 
