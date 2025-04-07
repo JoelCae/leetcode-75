@@ -87,8 +87,7 @@ divisor_str("","Hello")
     ## Warning in divisor_str("", "Hello"): Length of str1 and str2 have to be >= 1
     ## and <= 1000
 
-[<kbd> <br> Previous <br> </kbd>](https://bing.com)
-[<kbd> <br> Next <br> </kbd>](https://bing.com)
+[<kbd> <br> Previous <br> </kbd>](https://bing.com) [<kbd> <br> Next <br> </kbd>](https://bing.com)
 
 [^1]: Email: <jocastillo@colmex.mx>. For more content visit my website:
     <https://joelcastillo.netlify.app> <br> If you have any questions or
