@@ -20,6 +20,7 @@ minima:
     - title: Github repository
       icon: github
       url: "https://github.com/JoelCae/leetcode-75"
-      
+
+minima:
   nav_pages:
     - about.md
