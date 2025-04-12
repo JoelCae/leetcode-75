@@ -1,14 +1,3 @@
----
-layout: post
-title: "This post demonstrates post content styles"
-categories: junk
-author:
-- Bart Simpson
-- Nelson Mandela Muntz
-meta: "Springfield"
-modified_date: 2016-05-27
----
-
 # 1768 Merge Strings Alternately [^2]
 by Joel Castillo Espinosa [^1]
 
