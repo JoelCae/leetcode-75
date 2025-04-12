@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 ---
 
 # 1768 Merge Strings Alternately [^2]
