@@ -1,7 +1,4 @@
----
-layout: post
-show_title: false
----
+&nbsp
 
 # 1768 Merge Strings Alternately [^2]
 by Joel Castillo Espinosa [^1]
