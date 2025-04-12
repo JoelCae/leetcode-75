@@ -26,6 +26,3 @@ minima:
     - title: LinkenId
       icon: "fa fa-globe"
       url: "https://joelcastillo.netlify.app"
-
-show_excerpts: false
-toc: false
