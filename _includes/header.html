@@ -1,7 +1,7 @@
 <header class="site-header">
 
   <div class="wrapper">
-    
+    {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" />
         <label for="nav-trigger">
