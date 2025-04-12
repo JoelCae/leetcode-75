@@ -14,10 +14,6 @@ remote_theme: jekyll/minima@1e8a445
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  
-minima:
-  nav_pages:
-    - about.md
 
 minima:
   social_links:
@@ -31,3 +27,5 @@ minima:
       icon: "fa fa-globe"
       url: "https://joelcastillo.netlify.app"
 
+show_excerpts: false
+toc: false
