@@ -1,5 +1,5 @@
 ---
-title:
+title:""
 ---
 
 # 1768 Merge Strings Alternately [^2]
