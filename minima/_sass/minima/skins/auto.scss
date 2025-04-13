@@ -19,7 +19,7 @@ $lm-site-title-color:      $lm-brand-color-dark !default;
 $lm-heading-color:         #111111 !default;
 $lm-text-color:            $lm-brand-color-dark !default;
 $lm-background-color:      #fdfdfd !default;
-$lm-code-background-color: #888888 !default;
+$lm-code-background-color: #f6f8fa !default;
 
 $lm-link-base-color:       #2a7ae2 !default;
 $lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
@@ -56,7 +56,7 @@ $lm-table-border-color:    $lm-border-color-01 !default;
     .gi    { color: #3f993f } // Generic.Inserted
     .gi .x { color: #3f993f } // Generic.Inserted.Specific
     .go    { color: #888888 } // Generic.Output
-    .gp    { color: #555555 } // Generic.Prompt
+    .gp    { color: #d1cfcf } // Generic.Prompt
     .gr    { color: #aa0000 } // Generic.Error
     .gs    { font-weight: bold } // Generic.Strong
     .gt    { color: #aa0000 } // Generic.Traceback
