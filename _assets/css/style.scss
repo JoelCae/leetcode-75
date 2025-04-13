@@ -1,0 +1,40 @@
+/* --- ESTILO TIPO GITHUB PARA BLOQUES DE CODIGO --- */
+
+pre, code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+.highlight, pre {
+  background-color: #f6f8fa; /* fondo gris clarito */
+  border: 1px solid #d0d7de; /* borde gris clarito */
+  border-radius: 6px;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+code {
+  background-color: rgba(175, 184, 193, 0.2); /* pequeño fondo gris para `inline code` */
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 6px;
+}
+
+/* Opcional: mejora el texto dentro del bloque */
+.highlight {
+  color: #24292f; /* color de texto general */
+}
+
+/* Opcional: dar color a palabras clave en R y otros lenguajes */
+.highlight .k { color: #d73a49; } /* palabras clave (for, function, etc.) */
+.highlight .s { color: #032f62; } /* strings "texto" */
+.highlight .c { color: #6a737d; font-style: italic; } /* comentarios */
+.highlight .n { color: #005cc5; } /* nombres (variables) */
+.highlight .o { color: #d73a49; } /* operadores + - * / */
