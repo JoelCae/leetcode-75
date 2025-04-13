@@ -30,10 +30,12 @@ minima:
 header_pages:
   - about.md
 
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
-    theme: github
+minima:
+#   Minima skin selection. Available skins are:
+#     * classic            Default, light color scheme.
+#     * dark               Dark variant of the classic skin.
+#     * auto               Adaptive skin based on the classic and dark skins.
+#     * solarized-light    Light variant of solarized color scheme.
+#     * solarized-dark     Dark variant of solarized color scheme.
+#     * solarized          Adaptive skin for solarized color scheme skins.
+  skin: dark
