@@ -19,7 +19,7 @@ $lm-site-title-color:      $lm-brand-color-dark !default;
 $lm-heading-color:         #111111 !default;
 $lm-text-color:            $lm-brand-color-dark !default;
 $lm-background-color:      #fdfdfd !default;
-$lm-code-background-color: #f6f8fa !default;
+$lm-code-background-color: #888888 !default;
 
 $lm-link-base-color:       #2a7ae2 !default;
 $lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
@@ -192,10 +192,10 @@ $dm-table-border-color:    $dm-border-color-01 !default;
     .nn    { color: #11a69f } // Name.Namespace
     .no    { color: #9d99e6 } // Name.Constant
     .nt    { color: #de3581 } // Name.Tag
-    .nv    { color: #888888 } // Name.Variable
-    .vc    { color: #888888 } // Name.Variable.Class
-    .vg    { color: #888888 } // Name.Variable.Global
-    .vi    { color: #888888 } // Name.Variable.Instance
+    .nv    { color: #9680b1 } // Name.Variable
+    .vc    { color: #9680b1 } // Name.Variable.Class
+    .vg    { color: #9680b1 } // Name.Variable.Global
+    .vi    { color: #9680b1 } // Name.Variable.Instance
 
     .o     { color: #bcd890 } // Operator
     .ow    { color: #bcd890 } // Operator.Word
