@@ -1,19 +1,43 @@
 Welcome to my LeetCode 75 journey! In this post, I'll be sharing my solutions and insights for the 75 essential problems that are part of [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/) study plan.
 
 The plan study is struturated in the next topics :
-+------------------------+---------------------------+
-| -   Arrays & Strings   | -   Graphs - DFS          |
-| -   Two Pointers       | -   Graphs - BFS          |
-| -   Sliding Window     | -   Heap / Priority Queue |
-| -   Prefix Sum         | -   Binary Search         |
-| -   HashMap/Set        | -   Backtracking          |
-| -   Stack              | -   DP - 1D               |
-| -   Queue              | -   DP - Multidimensional |
-| -   Linked List        | -   Bit Manipulation      |
-| -   Binary Tree - DFS  | -   Trie                  |
-| -   Binary Tree - BFS  | -   Intervals             |
-| -   Binary Search Tree | -   Monotonic Stack       |
-+------------------------+---------------------------+
+
+<table style="width:74%;">
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li>Arrays &amp; Strings</li>
+<li>Two Pointers</li>
+<li>Sliding Window</li>
+<li>Prefix Sum</li>
+<li>HashMap/Set</li>
+<li>Stack</li>
+<li>Queue</li>
+<li>Linked List</li>
+<li>Binary Tree - DFS</li>
+<li>Binary Tree - BFS</li>
+<li>Binary Search Tree</li>
+</ul></td>
+<td><ul>
+<li>Graphs - DFS</li>
+<li>Graphs - BFS</li>
+<li>Heap / Priority Queue</li>
+<li>Binary Search</li>
+<li>Backtracking</li>
+<li>DP - 1D</li>
+<li>DP - Multidimensional</li>
+<li>Bit Manipulation</li>
+<li>Trie</li>
+<li>Intervals</li>
+<li>Monotonic Stack</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
 All solutions are programmed in R, and I use Rmarkdown to manage the MD files to present the problems in a comprehensive way.
 
