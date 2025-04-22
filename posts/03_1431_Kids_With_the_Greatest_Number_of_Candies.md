@@ -58,7 +58,7 @@ kids_candies <- function(candies,extraCandies){
     # get the max in candies and evaluate with candies + extraCandies
     max_cand <- max(candies)
     result <- candies + extraCandies >= max_cand
-    print(result)
+    return(result)
   }
 }
 ```

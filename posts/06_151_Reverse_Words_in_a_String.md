@@ -57,7 +57,7 @@ word_reverse <- function(s){
     s_split_wospac <- s_split[[1]][!spac]
     # reverse without blank spaces
     result <- paste(rev(s_split_wospac), collapse = " ")
-    result
+    return(result)
   }
 }
 ```

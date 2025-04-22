@@ -45,7 +45,7 @@ merg_str <- function(word1, word2){
   if(l_w1 < 1 | l_w2 < 1 | l_w1 > 100 | l_w2 > 100 ){
     warning("Length of world1 and world2 have to be >= 1 and <= 100 ")}
   
-  # soluition
+  # solution
   else {
     string <- "" # element that contains the merge
     

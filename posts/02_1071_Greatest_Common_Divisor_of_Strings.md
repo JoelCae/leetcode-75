@@ -42,7 +42,7 @@ divisor_str <- function(str1,str2){
   if(l_w1 < 1 | l_w2 < 1 | l_w1 > 100 | l_w2 > 100 ) {
     warning("Length of str1 and str2 have to be >= 1 and <= 1000")}
   
-  # soluition
+  # solution
   else {
     result <- "" # it is the string x 
     string <- ifelse(l_w1<= l_w2, str1,str2)
@@ -59,7 +59,7 @@ divisor_str <- function(str1,str2){
         else {result <- ""}
       }
     }
-    print(result)
+    return(result)
   }
 }
 ```

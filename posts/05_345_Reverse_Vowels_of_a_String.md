@@ -42,7 +42,7 @@ string_reverse <- function(s){
     # reverse of vowels 
     i_vowel_rev <- rev(i_vowel)
     
-    # reverser the vowels in the string
+    # reverse the vowels in the string
     s_rev <- s_split
     for (i in 1:length(i_vowel)) {
       i_normal <- i_vowel[i]
@@ -50,7 +50,7 @@ string_reverse <- function(s){
       s_rev[[1]][i_normal] <- s_split[[1]][i_rev] 
     }
     result <- paste(s_rev[[1]],collapse = "")
-    result
+    return(result)
   }
 }
 ```
