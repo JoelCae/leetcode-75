@@ -26,7 +26,7 @@ Return the merged string.
 
 **Constraints:**
 
-- 1 \<= **word1.length**, **word2.length** \<= 100
+- 1 ≤ **word1.length**, **word2.length** ≤ 100
 - **word1** and **word2** consist of lowercase English letters
 
 ## SOLUTION [^3]
@@ -43,7 +43,7 @@ merg_str <- function(word1, word2){
   
   # condition
   if(l_w1 < 1 | l_w2 < 1 | l_w1 > 100 | l_w2 > 100 ){
-    warning("Length of world1 and world2 have to be >= 1 and <= 100 ")}
+    warning("The lengths of word1 and word2 must be ≥ 1 and ≤ 100")}
   
   # solution
   else {
@@ -87,14 +87,14 @@ words.
 merg_str("","Hello")
 ```
 
-    ## Warning in merg_str("", "Hello"): Length of world1 and world2 have to be >= 1 and <= 100
+    ## Warning in merg_str("", "Hello"): The lengths of word1 and word2 must be ≥ 1 and ≤ 100
 
-[^1]: This problem is originally from Leetdode, you can find it in
+[^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75).
 
 [^2]: Email: <jocastillo@colmex.mx>. For more content visit my website:
     <https://joelcastillo.netlify.app> <br> If you have any questions or
-    suggestions, I’d be grateful to receive your message.
+    suggestions, I’d be grateful to hear from you.
 
-[^3]: This solution is entirely my authorship. I used R version 4.4.1
-    (2024-06-14 ucrt).
+[^3]: This solution is entirely my own work. It was developed using R
+    version 4.4.1 (2024-06-14 ucrt).

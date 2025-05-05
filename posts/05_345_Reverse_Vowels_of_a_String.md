@@ -22,7 +22,7 @@ can appear in both lower and upper cases, more than once.
 
 **Constraints:**
 
-- 1 \<= **s.length** \<= 3 \* $10^5$
+- 1 ≤ **s.length** ≤ 3 \* $10^5$
 - **s** consist of printable ASCII characters.
 
 ## SOLUTION [^3]
@@ -34,7 +34,7 @@ string_reverse <- function(s){
   
   # conditions
   if (l_s == 0) {
-     warning("Length of s have to be >= 1")
+     warning("Length of s must be ≥ 1")
   } 
   else {
     #get the vowels
@@ -77,14 +77,14 @@ In addition, we can also check the restrictions.
 string_reverse("")
 ```
 
-    ## Warning in string_reverse(""): Length of s have to be >= 1
+    ## Warning in string_reverse(""): Length of s must be ≥ 1
 
-[^1]: This problem is originally from Leetdode, you can find it in
+[^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/reverse-vowels-of-a-string/?envType=study-plan-v2&envId=leetcode-75).
 
 [^2]: Email: <jocastillo@colmex.mx>. For more content visit my website:
     <https://joelcastillo.netlify.app> <br> If you have any questions or
-    suggestions, I’d be grateful to receive your message.
+    suggestions, I’d be grateful to hear from you.
 
-[^3]: This solution is entirely my authorship. I used R version 4.4.1
-    (2024-06-14 ucrt).
+[^3]: This solution is entirely my own work. It was developed using R
+    version 4.4.1 (2024-06-14 ucrt).

@@ -25,7 +25,7 @@ and **str2**.
 
 **Constraints:**
 
-- 1 \<= **str1.length**, **str2.length** \<= 1000
+- 1 ≤ **str1.length**, **str2.length** ≤ 1000
 - **str1** and **str2** consist of English uppercase letters.
 
 ## SOLUTION [^3]
@@ -40,7 +40,7 @@ divisor_str <- function(str1,str2){
   
   # condition
   if(l_w1 < 1 | l_w2 < 1 | l_w1 > 100 | l_w2 > 100 ) {
-    warning("Length of str1 and str2 have to be >= 1 and <= 1000")}
+    warning("Lengths of str1 and str2 must be ≥ 1 and ≤ 1000")}
   
   # solution
   else {
@@ -87,14 +87,14 @@ words.
 divisor_str("","Hello")
 ```
 
-    ## Warning in divisor_str("", "Hello"): Length of str1 and str2 have to be >= 1 and <= 1000
+    ## Warning in divisor_str("", "Hello"): Lengths of str1 and str2 must be ≥ 1 and ≤ 1000
 
-[^1]: This problem is originally from Leetdode, you can find it in
+[^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/?envType=study-plan-v2&envId=leetcode-75).
 
 [^2]: Email: <jocastillo@colmex.mx>. For more content visit my website:
     <https://joelcastillo.netlify.app> <br> If you have any questions or
-    suggestions, I’d be grateful to receive your message.
+    suggestions, I’d be grateful to hear from you.
 
-[^3]: This solution is entirely my authorship. I used R version 4.4.1
-    (2024-06-14 ucrt).
+[^3]: This solution is entirely my own work. It was developed using R
+    version 4.4.1 (2024-06-14 ucrt).

@@ -24,10 +24,10 @@ without violating the no-adjacent-flowers rule and **false** otherwise.
 
 **Constraints:**
 
-- 1 \<= **flowerbed.length** \<= 2 x $10^4$
+- 1 ≤ **flowerbed.length** ≤ 2 x $10^4$
 - **flowerbed\[i\]** is 0 or 1
 - There are no two adjacent flowers in flowerbed
-- 0 \<= **n** \<= flowerbed.length
+- 0 ≤ **n** ≤ flowerbed.length
 
 ## SOLUTION [^3]
 
@@ -39,9 +39,9 @@ flowers <- function(flowerbed,n){
   if(sum(0 == flowerbed | flowerbed == 1) != l_fb  | l_fb == 0  | n  < 0  | n > l_fb |
      grepl(paste(flowerbed, collapse = ""), pattern = "11" ) ) {
     if(sum(0 == flowerbed | flowerbed == 1) != l_fb){
-     warning("Elements in flowerded are not 1 or 0")}
-    if(l_fb == 0) {warning("Length of flowerbed have to be => 1")}
-    if(n  < 0  | n > l_fb ) {warning("n have to be >= 0 and <=  lowerbed.length")}
+     warning("All elements in flowerded must be 1 or 0")}
+    if(l_fb == 0) {warning("Length of flowerbed must be ≥ 1")}
+    if(n  < 0  | n > l_fb ) {warning("n must be ≥ 0 and ≤ lowerbed.length")}
     if(grepl(paste(flowerbed, collapse = ""), pattern = "11")) {
       warning("There are two adjacent flowers in flowerbed")}
   } else {
@@ -117,26 +117,26 @@ In addition, we can also check the restrictions.
 flowers(c(), -1)
 ```
 
-    ## Warning in flowers(c(), -1): Length of flowerbed have to be => 1
+    ## Warning in flowers(c(), -1): Length of flowerbed must be ≥ 1
 
-    ## Warning in flowers(c(), -1): n have to be >= 0 and <= lowerbed.length
+    ## Warning in flowers(c(), -1): n must be ≥ 0 and ≤ lowerbed.length
 
 ``` r
 flowers(c(1,1,0,0,2), 6)
 ```
 
-    ## Warning in flowers(c(1, 1, 0, 0, 2), 6): Elements in flowerded are not 1 or 0
+    ## Warning in flowers(c(1, 1, 0, 0, 2), 6): All elements in flowerded must be 1 or 0
 
-    ## Warning in flowers(c(1, 1, 0, 0, 2), 6): n have to be >= 0 and <= lowerbed.length
+    ## Warning in flowers(c(1, 1, 0, 0, 2), 6): n must be ≥ 0 and ≤ lowerbed.length
 
     ## Warning in flowers(c(1, 1, 0, 0, 2), 6): There are two adjacent flowers in flowerbed
 
-[^1]: This problem is originally from Leetdode, you can find it in
+[^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/can-place-flowers/?envType=study-plan-v2&envId=leetcode-75).
 
 [^2]: Email: <jocastillo@colmex.mx>. For more content visit my website:
     <https://joelcastillo.netlify.app> <br> If you have any questions or
-    suggestions, I’d be grateful to receive your message.
+    suggestions, I’d be grateful to hear from you.
 
-[^3]: This solution is entirely my authorship. I used R version 4.4.1
-    (2024-06-14 ucrt).
+[^3]: This solution is entirely my own work. It was developed using R
+    version 4.4.1 (2024-06-14 ucrt).
