@@ -48,9 +48,9 @@ All solutions are programmed in R, and I use Rmarkdown to manage the MD files to
 If you have any questions or suggestions, I’d be grateful to receive your message. 
 
 ### Array / String
-- [01 Merge Strings Alternately](posts/01_1768_Merge_Strings_Alternately)
-- [02 Greatest Common Divisor of Strings](posts/02_1071_Greatest_Common_Divisor_of_Strings)
-- [03 Kids With the Greatest Number of Candies](posts/03_1431_Kids_With_the_Greatest_Number_of_Candies)
-- [04 Can Place Flowers](posts/04_650_Can_Place_Flowers)
-- [05 Reverse Vowels of a String](posts/05_345_Reverse_Vowels_of_a_String)
-- [06 Reverse Words in a String](posts/06_151_Reverse_Words_in_a_String)
+- [01 Merge Strings Alternately](posts/01_1768_Merge_Strings_Alternately.md)
+- [02 Greatest Common Divisor of Strings](posts/02_1071_Greatest_Common_Divisor_of_Strings.md)
+- [03 Kids With the Greatest Number of Candies](posts/03_1431_Kids_With_the_Greatest_Number_of_Candies.md)
+- [04 Can Place Flowers](posts/04_650_Can_Place_Flower.md)
+- [05 Reverse Vowels of a String](posts/05_345_Reverse_Vowels_of_a_String.md)
+- [06 Reverse Words in a String](posts/06_151_Reverse_Words_in_a_String.md)
