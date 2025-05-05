@@ -54,3 +54,6 @@ If you have any questions or suggestions, I’d be grateful to receive your mess
 - [04 Can Place Flowers](posts/04_650_Can_Place_Flowers.md)
 - [05 Reverse Vowels of a String](posts/05_345_Reverse_Vowels_of_a_String.md)
 - [06 Reverse Words in a String](posts/06_151_Reverse_Words_in_a_String.md)
+- [07 Product of Array Except Self](posts/07_238_Product_of_Array_Except_Self.md)
+- [08 Increasing Triplet Subsequence](posts/08_334_Increasing_Triplet_Subsequence.md)
+- [09 String Compression](posts/09_443_String_Compression.md)
