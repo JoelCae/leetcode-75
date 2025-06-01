@@ -40,26 +40,10 @@ Note that multiple kids can have the greatest number of candies.
 
 ``` r
 kids_candies <- function(candies,extraCandies){
-  
-  # conditions 
-  if (length(candies) < 2 | length(candies) > 100 | 
-      extraCandies < 1 |  extraCandies > 50 | 
-      min(candies)<1  | max(candies)>100 ) {
-    if(length(candies) < 2 | length(candies) > 100 ) {
-      warning("The length of candies must be ≥ 2 and ≤ 100")}
-    if(extraCandies < 1 |  extraCandies > 50 ) {
-      warning("extraCadies must be ≥ 1 and ≤ 50")}
-    if(min(candies)<1  | max(candies)>100 ) {
-      warning("candies[i] must be ≥ 1  and ≤ 100")}
-  }
-  
-  # solution
-  else {
-    # get the max in candies and evaluate with candies + extraCandies
-    max_cand <- max(candies)
-    result <- candies + extraCandies >= max_cand
-    return(result)
-  }
+  # get the max in candies and evaluate with candies + extraCandies
+  max_cand <- max(candies)
+  result <- candies + extraCandies >= max_cand
+  return(result)
 }
 ```
 
@@ -74,28 +58,16 @@ kids_candies(c(2,3,5,1,3),3)
     ## [1]  TRUE  TRUE  TRUE FALSE  TRUE
 
 ``` r
+kids_candies(candies = c(4,2,1,1,2), extraCandies = 1)
+```
+
+    ## [1]  TRUE FALSE FALSE FALSE FALSE
+
+``` r
 kids_candies(candies = c(12,1,12), extraCandies = 10)
 ```
 
     ## [1]  TRUE FALSE  TRUE
-
-In addition, we can also check the restrictions.
-
-``` r
-kids_candies(c(11), 0)
-```
-
-    ## Warning in kids_candies(c(11), 0): The length of candies must be ≥ 2 and ≤ 100
-
-    ## Warning in kids_candies(c(11), 0): extraCadies must be ≥ 1 and ≤ 50
-
-``` r
-kids_candies(c(1,103),51)
-```
-
-    ## Warning in kids_candies(c(1, 103), 51): extraCadies must be ≥ 1 and ≤ 50
-
-    ## Warning in kids_candies(c(1, 103), 51): candies[i] must be ≥ 1 and ≤ 100
 
 [^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75).

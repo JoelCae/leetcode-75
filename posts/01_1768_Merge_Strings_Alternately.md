@@ -33,34 +33,25 @@ Return the merged string.
 
 ``` r
 merg_str <- function(word1, word2){
-  
   # split the words in letters
   split1 <-strsplit(word1,"")
   split2 <-strsplit(word2,"") 
-  
   l_w1 <- length(split1[[1]])
   l_w2 <- length(split2[[1]])
   
-  # condition
-  if(l_w1 < 1 | l_w2 < 1 | l_w1 > 100 | l_w2 > 100 ){
-    warning("The lengths of word1 and word2 must be ≥ 1 and ≤ 100")}
+  string <- "" # element that contains the merge
   
-  # solution
-  else {
-    string <- "" # element that contains the merge
+  # in each iteration, take an element (letter or "") per word 
+  for (i in 1:max(l_w1,l_w2)) { # to include all elements 
+    if (is.na(split1[[1]][i])) {letter1 <- ""} 
+    else{ letter1 <-split1[[1]][i] }
     
-    # in each interaction, take an element (letter or "") per word 
-    for (i in 1:max(l_w1,l_w2)) { # to include all elements 
-      if (is.na(split1[[1]][i])) {letter1 <- ""} 
-      else{ letter1 <-split1[[1]][i] }
-      
-      if (is.na(split2[[1]][i])) {letter2 <- ""}
-      else { letter2 <- split2[[1]][i] }
-      
-      string <- paste(string,letter1,letter2, sep = "") 
-    }
-    return(string)
+    if (is.na(split2[[1]][i])) {letter2 <- ""}
+    else { letter2 <- split2[[1]][i] }
+    
+    string <- paste(string,letter1,letter2, sep = "") 
   }
+  return(string)
 }
 ```
 
@@ -80,14 +71,11 @@ merg_str(word1 = "ab", word2 = "pqrs")
 
     ## [1] "apbqrs"
 
-In addition, we can also check the restriction in the length of the
-words.
-
 ``` r
-merg_str("","Hello")
+merg_str(word1 = "abcd", word2 = "pq")
 ```
 
-    ## Warning in merg_str("", "Hello"): The lengths of word1 and word2 must be ≥ 1 and ≤ 100
+    ## [1] "apbqcd"
 
 [^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75).

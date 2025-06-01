@@ -42,42 +42,39 @@ You must write an algorithm that uses only constant extra space.
 
 **Constraints:**
 
-- 1 ≤ chars.length ≤ 2000
-- chars\[i\] is a lowercase English letter, uppercase English letter,
-  digit, or symbol
+- 1 ≤ **chars.length** ≤ 2000
+- **chars\[i\]** is a lowercase English letter, uppercase English
+  letter, digit, or symbol
 
 ## SOLUTION [^3]
 
 ``` r
 compress <- function(chars){
-  if(length(chars) < 1 ) {
-    if (length(chars) < 1 ) {warning("Length of chars must be ≥ 1")}
-  } 
-  else {
-    # find changes of letters
-    split <- NULL
-    for (i in 2:length(chars)) {
-      dif <- chars[i] == chars[i-1]
-      split <- c(split, dif)
-    }
-    split <- grep("FALSE", split)
-    split <- c(0,split, length(chars)) 
-    
-    # add to final vector
-    s <- NULL
-    # case simple (no repeat)
-    for( i in 2:length(split)) {
-      if (split[i] - split[i-1] == 1 ) {
-        s <- c(s, chars[i-1] )
-      }
-      # case with repeats
-      else {s <- c(s, chars[i-1], split[i] - split[i-1]) }
-    }
-    # count the characters
-    s <- paste(s, collapse = "")
-    s <- strsplit(s, "")[[1]]
-    return(length(s))
+  # find changes of letters
+  split <- NULL
+  for (i in 2:length(chars)) {
+    dif <- chars[i] == chars[i-1]
+    split <- c(split, dif)
   }
+  split <- grep("FALSE", split)
+  split <- c(0,split, length(chars)) 
+  
+  # add to final vector
+  s <- NULL
+  
+  # case simple (no repeat)
+  for( i in 2:length(split)) {
+    if (split[i] - split[i-1] == 1 ) {
+      s <- c(s, chars[i-1] )
+    }
+    # case with repeats
+    else {s <- c(s, chars[i-1], split[i] - split[i-1]) }
+  }
+  # count the characters
+  s <- paste(s, collapse = "")
+  s <- strsplit(s, "")[[1]]
+  
+  return(length(s))
 }
 ```
 
@@ -92,24 +89,16 @@ compress(c("a","a","b","b","c","c","c"))
     ## [1] 6
 
 ``` r
-compress(chars = c("a","b","b","b","b","b","b","b","b","b","b","b","b"))
-```
-
-    ## [1] 4
-
-``` r
 compress(c("a"))
 ```
 
     ## [1] 1
 
-In addition, we can also check the restrictions.
-
 ``` r
-compress(c())
+compress(chars = c("a","b","b","b","b","b","b","b","b","b","b","b","b"))
 ```
 
-    ## Warning in compress(c()): Length of chars must be ≥ 1
+    ## [1] 4
 
 [^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/string-compression/?envType=study-plan-v2&envId=leetcode-75).

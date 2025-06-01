@@ -29,29 +29,25 @@ can appear in both lower and upper cases, more than once.
 
 ``` r
 string_reverse <- function(s){
-  s_split <- strsplit(s, split = "")
-  l_s <- length(s_split[[1]])
+  # split the string
+  s_split <- strsplit(s, split = "") 
   
-  # conditions
-  if (l_s == 0) {
-     warning("Length of s must be ≥ 1")
-  } 
-  else {
-    #get the vowels
-    i_vowel <- grep(s_split[[1]], pattern = "[aeiouAEIOU]")
-    # reverse of vowels 
-    i_vowel_rev <- rev(i_vowel)
-    
-    # reverse the vowels in the string
-    s_rev <- s_split
-    for (i in 1:length(i_vowel)) {
-      i_normal <- i_vowel[i]
-      i_rev <- i_vowel_rev[i]
-      s_rev[[1]][i_normal] <- s_split[[1]][i_rev] 
-    }
-    result <- paste(s_rev[[1]],collapse = "")
-    return(result)
+  #get the vowels
+  i_vowel <- grep(s_split[[1]], pattern = "[aeiouAEIOU]")
+  
+  # reverse of vowels 
+  i_vowel_rev <- rev(i_vowel)
+  
+  # reverse the vowels in the string
+  s_rev <- s_split
+  for (i in 1:length(i_vowel)) {
+    i_normal <- i_vowel[i]
+    i_rev <- i_vowel_rev[i]
+    s_rev[[1]][i_normal] <- s_split[[1]][i_rev] 
   }
+  result <- paste(s_rev[[1]],collapse = "")
+  return(result)
+
 }
 ```
 
@@ -70,14 +66,6 @@ string_reverse(s = "leetcode")
 ```
 
     ## [1] "leotcede"
-
-In addition, we can also check the restrictions.
-
-``` r
-string_reverse("")
-```
-
-    ## Warning in string_reverse(""): Length of s must be ≥ 1
 
 [^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/reverse-vowels-of-a-string/?envType=study-plan-v2&envId=leetcode-75).

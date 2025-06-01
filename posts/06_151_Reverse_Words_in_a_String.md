@@ -42,23 +42,14 @@ space separating the words. Do not include any extra spaces.
 word_reverse <- function(s){
   # split by blank space 
   s_split <- strsplit(s, split = " ")
-  # check if S only contain blank spaces
-  noword<- ifelse(length(grep(pattern = "^\\s*$", s)) ==1, T, F) 
-  l_s <- length(s_split[[1]])
   
-  # conditions 
-  if(l_s == 0  | noword == TRUE ) {
-    if (l_s == 0 ) {warning("Length of s must be ≥ 1")}
-    if ( noword  == 1) {warning("s must have at least one word")}
-  }
-  else {
-    # identify more that one blank space 
-    spac<- s_split[[1]] == ""
-    s_split_wospac <- s_split[[1]][!spac]
-    # reverse without blank spaces
-    result <- paste(rev(s_split_wospac), collapse = " ")
-    return(result)
-  }
+  # identify more that one blank space 
+  spac<- s_split[[1]] == ""
+  s_split_wospac <- s_split[[1]][!spac]
+  
+  # reverse without blank spaces
+  result <- paste(rev(s_split_wospac), collapse = " ")
+  return(result)
 }
 ```
 
@@ -83,22 +74,6 @@ word_reverse( s = "a good   example")
 ```
 
     ## [1] "example good a"
-
-In addition, we can also check the restrictions.
-
-``` r
-word_reverse("")
-```
-
-    ## Warning in word_reverse(""): Length of s must be ≥ 1
-
-    ## Warning in word_reverse(""): s must have at least one word
-
-``` r
-word_reverse("    ")
-```
-
-    ## Warning in word_reverse(" "): s must have at least one word
 
 [^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=leetcode-75).

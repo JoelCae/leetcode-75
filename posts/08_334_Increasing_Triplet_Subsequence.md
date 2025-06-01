@@ -25,43 +25,37 @@ return **false**.
 **Constraints:**
 
 - 1 ≤ **nums.length** ≤ 5\*$10^5$
-- $-2^{31}$ ≤ nums\[i\] ≤ $2^{31}$ - 1
+- $-2^{31}$ ≤ **nums\[i\]** ≤ $2^{31}$ - 1
 
 ## SOLUTION [^3]
 
 ``` r
 triple <- function(nums) {
-  # conditions 
-  if(length(nums) < 1 ) {
-    if (length(nums) < 1 ) {warning("Length of nums must be ≥ 1")}
-  }
-  else {
-    # possible triplets
-    lxp <- length(nums) - 2 
-    result <- FALSE
-    for (i in 1:lxp)  {
-      if(result == FALSE) {
-        # in each iteraction create a subvector
-        vec_check <- nums[i:length(nums)]
-        # there is i-elements > first element in the subvector
-        vec_check <- vec_check[vec_check[1] < vec_check]
-        lv = length(vec_check)
-        # if at least 2 elements in the new vector -> check again
-        if (lv > 1 ) {
-          # repeating the first process
-          for (i in 1:lv)  {
-            if(result == FALSE) {
-              vec_check1 <- vec_check[i:lv]
-              vec_check1 <- vec_check1[vec_check1[1] < vec_check1]
-              # if at least one elemen in the new vector -> condition is true
-              result <-  ifelse(length(vec_check1) >= 1,TRUE,FALSE)
-            } else {result <- TRUE} # mantain true 
-          }
+  # possible triplets
+  lxp <- length(nums) - 2 
+  result <- FALSE
+  for (i in 1:lxp)  {
+    if(result == FALSE) {
+      # in each iteration create a subvector
+      vec_check <- nums[i:length(nums)]
+      # there is i-elements > first element in the subvector
+      vec_check <- vec_check[vec_check[1] < vec_check]
+      lv = length(vec_check)
+      # if at least 2 elements in the new vector -> check again
+      if (lv > 1 ) {
+        # repeating the first process
+        for (i in 1:lv)  {
+          if(result == FALSE) {
+            vec_check1 <- vec_check[i:lv]
+            vec_check1 <- vec_check1[vec_check1[1] < vec_check1]
+            # if at least one element in the new vector -> condition is true
+            result <-  ifelse(length(vec_check1) >= 1,TRUE,FALSE)
+          } else {result <- TRUE} # maintain true 
         }
-      } else{result <- TRUE} # mantain true 
-    }
-    return(result)
+      }
+    } else{result <- TRUE} # maintain true 
   }
+  return(result)
 }
 ```
 
@@ -86,14 +80,6 @@ triple(c(2,1,5,0,4,6))
 ```
 
     ## [1] TRUE
-
-In addition, we can also check the restrictions.
-
-``` r
-triple(nums = c())
-```
-
-    ## Warning in triple(nums = c()): Length of nums must be ≥ 1
 
 [^1]: This problem is originally from LeetCode, you can find it in
     [Leetcode](https://leetcode.com/problems/increasing-triplet-subsequence/?envType=study-plan-v2&envId=leetcode-75).
