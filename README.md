@@ -57,3 +57,9 @@ If you have any questions or suggestions, I’d be grateful to receive your mess
 - [07 Product of Array Except Self](posts/07_238_Product_of_Array_Except_Self.md)
 - [08 Increasing Triplet Subsequence](posts/08_334_Increasing_Triplet_Subsequence.md)
 - [09 String Compression](posts/09_443_String_Compression.md)
+
+### Two Pointers
+- [10 Move Zeroes](posts/10_283_Move_Zeroes.md)
+- [11 Is Subsequence](posts/11_392_Is_Subsequence.md)
+- [12 Container With Most Water](posts/12_11_Container_With_Most_Water.md)
+
