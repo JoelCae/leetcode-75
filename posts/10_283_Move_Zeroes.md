@@ -22,7 +22,7 @@ Note that you must do this in-place without making a copy of the array.
 **Constraints:**
 
 - 1 ≤ **nums.length** ≤ $10^4$
-- \-$2^{31}$ ≤ **nums\[i\]** ≤ $2^{31}$ - 1
+- $-2^{31}$ ≤ **nums\[i\]** ≤ $2^{31}$ - 1
 
 ## SOLUTION [^3]
 

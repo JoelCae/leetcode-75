@@ -24,7 +24,7 @@ return **false**.
 
 **Constraints:**
 
-- 1 ≤ **nums.length** ≤ 5\*$10^5$
+- 1 ≤ **nums.length** ≤ $5*10^5$
 - $-2^{31}$ ≤ **nums\[i\]** ≤ $2^{31}$ - 1
 
 ## SOLUTION [^3]
