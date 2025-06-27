@@ -62,4 +62,4 @@ If you have any questions or suggestions, I’d be grateful to receive your mess
 - [10 Move Zeroes](posts/10_283_Move_Zeroes.md)
 - [11 Is Subsequence](posts/11_392_Is_Subsequence.md)
 - [12 Container With Most Water](posts/12_11_Container_With_Most_Water.md)
-- [13 1679 Max Number of K-Sum Pairs](posts/13_1679_Max_Number_of_KSum_Pairs.md)
+- [13 Max Number of K-Sum Pairs](posts/13_1679_Max_Number_of_KSum_Pairs.md)
