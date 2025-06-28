@@ -63,3 +63,9 @@ If you have any questions or suggestions, I’d be grateful to receive your mess
 - [11 Is Subsequence](posts/11_392_Is_Subsequence.md)
 - [12 Container With Most Water](posts/12_11_Container_With_Most_Water.md)
 - [13 Max Number of K-Sum Pairs](posts/13_1679_Max_Number_of_KSum_Pairs.md)
+
+### Sliding Window
+- [14 643 Maximum Average Subarray I](posts/14_643_Maximum_Average_Subarray_I.md)
+- [15 1456 Maximum Number of Vowels in a Substring of Given Length](posts/15_1456_Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length.md)
+- [16 1004 Max Consecutive Ones III](posts/16_1004_Max_Consecutive_Ones_III.md)
+
