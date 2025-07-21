@@ -1,3 +1,5 @@
+# LeetCode 75 study plan
+
 Welcome to my LeetCode 75 journey! In this post, I'll be sharing my solutions and insights for the 75 essential problems that are part of [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/) study plan.
 
 You can visit the [github page](https://joelcae.github.io/leetcode-75/) and the [repository](https://github.com/JoelCae/leetcode-75) of this project. 
