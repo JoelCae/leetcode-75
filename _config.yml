@@ -23,10 +23,10 @@ minima:
       icon: github
       url: "https://github.com/JoelCae/leetcode-75"
     - title: LinkedIn
-      icon: fa-linkedin
+      icon: linkedin
       url: "https://www.linkedin.com/in/joel-castillo-espinosa"
     - title: Personal website
-      icon: globe
+      icon: web-awesome
       url: "https://joelcastillo.netlify.app"
 
 header_pages:
