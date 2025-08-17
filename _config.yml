@@ -26,7 +26,7 @@ minima:
       icon: linkedin
       url: "https://www.linkedin.com/in/joel-castillo-espinosa"
     - title: Personal website
-      icon: web-awesome
+      icon: opera
       url: "https://joelcastillo.netlify.app"
 
 header_pages:
