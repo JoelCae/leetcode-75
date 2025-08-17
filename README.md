@@ -67,7 +67,11 @@ If you have any questions or suggestions, I’d be grateful to receive your mess
 - [13 Max Number of K-Sum Pairs](posts/13_1679_Max_Number_of_KSum_Pairs.md)
 
 ### Sliding Window
-- [14 643 Maximum Average Subarray I](posts/14_643_Maximum_Average_Subarray_I.md)
-- [15 1456 Maximum Number of Vowels in a Substring of Given Length](posts/15_1456_Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length.md)
-- [16 1004 Max Consecutive Ones III](posts/16_1004_Max_Consecutive_Ones_III.md)
+- [14 Maximum Average Subarray I](posts/14_643_Maximum_Average_Subarray_I.md)
+- [15 Maximum Number of Vowels in a Substring of Given Length](posts/15_1456_Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length.md)
+- [16 Max Consecutive Ones III](posts/16_1004_Max_Consecutive_Ones_III.md)
+- [17 Longest Subarray of 1's After Deleting One Element](posts/17_Longest_Subarray_of_1s_After_Deleting_One_Element.md)
 
+### Prefix Sum
+- [18 Find the Highest Altitude](posts/18_1732_Find_the_Highest_Altitude.md)
+- [19 Find Pivot Index](19_724_Find_Pivot_Index.md)
