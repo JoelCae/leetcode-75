@@ -74,4 +74,4 @@ If you have any questions or suggestions, I’d be grateful to receive your mess
 
 ### Prefix Sum
 - [18 Find the Highest Altitude](posts/18_1732_Find_the_Highest_Altitude.md)
-- [19 Find Pivot Index](19_724_Find_Pivot_Index.md)
+- [19 Find Pivot Index](posts/19_724_Find_Pivot_Index.md)
