@@ -1,15 +1,14 @@
-title: Main
+title: Your awesome title
+author:
+  name: GitHub User
+  email: your-email@domain.com
 
-author: 
-  name: Joel Castillo
-  email: jocastillo@colmex.mx
-
-#description: >
- # This is my leetcode75 journey
-
+description: >
+  Write an awesome description for your new site here. You can edit this line
+  in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
 
 theme: minima
-#remote_theme: jekyll/minima@1e8a445
 
 plugins:
   - jekyll-feed
