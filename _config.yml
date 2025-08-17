@@ -8,12 +8,16 @@ author:
  # This is my leetcode75 journey
 
 
-#theme: minima
-remote_theme: jekyll/minima@1e8a445
+theme: minima
+#remote_theme: jekyll/minima@1e8a445
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]
 
 minima:
   social_links:
@@ -27,7 +31,8 @@ minima:
       icon: "fa fa-globe"
       url: "https://joelcastillo.netlify.app"
 
-header_pages:
+#header_pages:
+nav_pages:
   - about.md
 
 minima:
