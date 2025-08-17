@@ -15,22 +15,23 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+
 minima:
+  skin: dark
   social_links:
     - title: Github repository
       icon: github
       url: "https://github.com/JoelCae/leetcode-75"
-    - title: LinkenId
-      icon: "fab fa-linkedin"
+    - title: LinkedIn
+      icon: linkedin
       url: "https://www.linkedin.com/in/joel-castillo-espinosa"
-    - title: LinkenId
-      icon: "fa fa-globe"
+    - title: Personal website
+      icon: globe
       url: "https://joelcastillo.netlify.app"
 
 header_pages:
   - about.md
 
-minima:
 #   Minima skin selection. Available skins are:
 #     * classic            Default, light color scheme.
 #     * dark               Dark variant of the classic skin.
@@ -38,4 +39,4 @@ minima:
 #     * solarized-light    Light variant of solarized color scheme.
 #     * solarized-dark     Dark variant of solarized color scheme.
 #     * solarized          Adaptive skin for solarized color scheme skins.
-  skin: dark
+
