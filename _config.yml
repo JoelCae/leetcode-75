@@ -23,7 +23,7 @@ minima:
       icon: github
       url: "https://github.com/JoelCae/leetcode-75"
     - title: LinkedIn
-      icon: linkedin
+      icon: fa-linkedin
       url: "https://www.linkedin.com/in/joel-castillo-espinosa"
     - title: Personal website
       icon: globe
