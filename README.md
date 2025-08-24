@@ -78,4 +78,4 @@ If you have any questions or suggestions, I’d be grateful to receive your mess
 
 ### Hash Map / Set
 - [20 Find the Difference of Two Arrays](posts/20_2215_Find_the_Difference_of_Two_Arrays.md)
-- [21 Unique Number of Occurrences](posts/21_1207_Unique_Number_of_Occurrences)
+- [21 Unique Number of Occurrences](posts/21_1207_Unique_Number_of_Occurrences.md)
