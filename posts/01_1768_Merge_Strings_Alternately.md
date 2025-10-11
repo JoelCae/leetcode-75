@@ -48,23 +48,21 @@ Return the merged string.
 ``` r
 merg_str <- function(word1, word2){
   # split the words in letters
-  split1 <-strsplit(word1,"")
-  split2 <-strsplit(word2,"") 
-  l_w1 <- length(split1[[1]])
-  l_w2 <- length(split2[[1]])
+  split1 <-strsplit(word1,"")[[1]]
+  split2 <-strsplit(word2,"")[[1]]
+  max_len <- max(length(split1), length(split2))
   
   string <- "" # element that contains the merge
   
-  # in each iteration, take an element (letter or "") per word 
-  for (i in 1:max(l_w1,l_w2)) { # to include all elements 
-    if (is.na(split1[[1]][i])) {letter1 <- ""} 
-    else{ letter1 <-split1[[1]][i] }
+  # in each iteration, take an element per word 
+  for (i in 1:max_len) { # to include all elements 
+    if (i <= length(split1)){
+      string <- c(string, split1[i])} 
     
-    if (is.na(split2[[1]][i])) {letter2 <- ""}
-    else { letter2 <- split2[[1]][i] }
-    
-    string <- paste(string,letter1,letter2, sep = "") 
+    if (i <= length(split2)){
+      string <- c(string, split2[i])}
   }
+  string <- paste(string,collapse= "") 
   return(string)
 }
 ```

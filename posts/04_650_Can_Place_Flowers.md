@@ -32,54 +32,23 @@ without violating the no-adjacent-flowers rule and **false** otherwise.
 ## SOLUTION [^3]
 
 ``` r
-flowers <- function(flowerbed,n){
-  # solution
-    # 1st case: Only 0, the maximum possible is floor((length(flowerbed) + 1)/2)
-
-    # 2nd case: at least a 1 in the vector (sum of 2.1 and 2.2 cases)
-      ## 2.1 case: count in extremes 
-      ## 2.2 case: count in the middle 
-      # it is possible to think the 2nd case in terms of the  1st case
-        ## just dividing the vector in sub vectors of 0's
-    
-    # 1st case:
-  if(sum(flowerbed) == 0) {
-    n_pos <- floor((length(flowerbed) + 1)/2)
-    return(n <= n_pos) }
-  else {
-    # 2nd case: 
-    #create vector where i-element is 1 
-    vector_1 <- c(0)  
-    for (i in 1:length(flowerbed)) {
-      if (flowerbed[i] == 1) {
-        vector_1 <- c(vector_1, i) }
+flowers <- function(flowerbed, n) {
+  count <- 0  # count a flower planted 
+  i <- 1 
+  # in each iteration evaluate if a plant can be planted, and sum in the count
+    # there are not a flower in i or i-1 or i+1
+    # for the first element the check in i-1 is not needed
+    # for the last element the check in i+1 is not needed
+  while(i <= length(flowerbed)) {
+    if(flowerbed[i] == 0 &&
+       (i == 1 || flowerbed[i-1] == 0) &&
+       (i == length(flowerbed) || flowerbed[i+1] == 0)){
+      flowerbed[i] <- 1  
+      count <- count + 1 
     }
-    vector_1 <- c(vector_1, length(flowerbed) + 1)
-    # create vector: how many 0 (between two "1", 1...1)?
-    vector_dif <- c()  
-    for (i in 2:length(vector_1)) {
-      vector_dif[i - 1] <- vector_1[i] - vector_1[i - 1] - 1 }
-    # adjust per each case
-    vector_dif_aj <- c()
-    for (i in 1:length(vector_dif)) {
-      ## 2.1 case: in the extremes of the vector: (0 0 1 ... ) or (...1 0 0 0)
-      if (i == 1 | i == length(vector_dif)) {
-        ## we can't use the element next to the first/last 1 (due to adjacent)
-        vector_dif_aj[i] <-  vector_dif[i] - 1 }
-        ## 2.2 case: in the middle of the vector: (...1 0 0 1 ... ) or (...1 0 0 0 1...)
-      else {
-        # we can't use two elements (due to adjacent), one per each 1
-        vector_dif_aj[i] <-  vector_dif[i] - 2 }
-    }
-    # count the possibles 1's in each sub vector
-    vector_n_pos <- c()
-    for (i in 1:length(vector_dif_aj)) {
-      vector_n_pos[i] <- floor((vector_dif_aj[i] + 1) / 2) }
-    
-    # total of 1's for the 2nd case
-    n_pos <- sum(vector_n_pos)
-    return(n <= n_pos)
+    i <- i + 1 
   }
+  return(count >= n)
 }
 ```
 

@@ -32,22 +32,18 @@ can appear in both lower and upper cases, more than once.
 ``` r
 string_reverse <- function(s){
   # split the string
-  s_split <- strsplit(s, split = "") 
+  s_split <- strsplit(s, split = "")[[1]]   
   
   #get the vowels
-  i_vowel <- grep(s_split[[1]], pattern = "[aeiouAEIOU]")
+  i_vowel <- grep(pattern = "[aeiouAEIOU]",s_split)
   
   # reverse of vowels 
   i_vowel_rev <- rev(i_vowel)
   
   # reverse the vowels in the string
-  s_rev <- s_split
-  for (i in 1:length(i_vowel)) {
-    i_normal <- i_vowel[i]
-    i_rev <- i_vowel_rev[i]
-    s_rev[[1]][i_normal] <- s_split[[1]][i_rev] 
-  }
-  result <- paste(s_rev[[1]],collapse = "")
+  s_split[i_vowel] <- s_split[i_vowel_rev]
+   
+  result <- paste(s_split,collapse = "")
   return(result)
 
 }

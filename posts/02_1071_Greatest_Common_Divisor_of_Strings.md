@@ -33,10 +33,10 @@ and **str2**.
 ``` r
 divisor_str <- function(str1,str2){
   # split the words in letters
-  split1 <-strsplit(str1,"")
-  split2 <-strsplit(str2,"")
-  l_w1 <- length(split1[[1]])
-  l_w2 <- length(split2[[1]])
+  split1 <-strsplit(str1,"")[[1]]
+  split2 <-strsplit(str2,"")[[1]]
+  l_w1 <- length(split1)
+  l_w2 <- length(split2)
   
   result <- "" # it is the string x 
   string <- ifelse(l_w1<= l_w2, str1,str2)
@@ -50,7 +50,6 @@ divisor_str <- function(str1,str2){
       if (str1 == paste(rep( base_str,l_w1/i),collapse = "") 
           & str2 == paste(rep( base_str,l_w2/i),collapse = "") ) {
        result <- base_str }
-      else {result <- ""}
     }
   }
   return(result)
