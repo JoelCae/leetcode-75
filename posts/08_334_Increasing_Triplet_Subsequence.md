@@ -34,32 +34,21 @@ return **false**.
 ## SOLUTION [^3]
 
 ``` r
-triple <- function(nums) {
-  # possible triplets
-  lxp <- length(nums) - 2 
-  result <- FALSE
-  for (i in 1:lxp)  {
-    if(result == FALSE) {
-      # in each iteration create a subvector
-      vec_check <- nums[i:length(nums)]
-      # there is i-elements > first element in the subvector
-      vec_check <- vec_check[vec_check[1] < vec_check]
-      lv = length(vec_check)
-      # if at least 2 elements in the new vector -> check again
-      if (lv > 1 ) {
-        # repeating the first process
-        for (i in 1:lv)  {
-          if(result == FALSE) {
-            vec_check1 <- vec_check[i:lv]
-            vec_check1 <- vec_check1[vec_check1[1] < vec_check1]
-            # if at least one element in the new vector -> condition is true
-            result <-  ifelse(length(vec_check1) >= 1,TRUE,FALSE)
-          } else {result <- TRUE} # maintain true 
-        }
-      }
-    } else{result <- TRUE} # maintain true 
+triple<- function(nums) {
+  first <- Inf
+  second <- Inf
+  
+  for (i in 1:length(nums)){
+    # is nums[i] less than first element in subsequence?
+    if(nums[i] <= first){
+      first <- nums[i]
+    #  is nums[i] less than first element in subsequence?
+    } else if(nums[i] <= second){
+      second <- nums[i]
+    # then nums[i] is greater than first and second element in subsequence
+    } else {return(TRUE)}
   }
-  return(result)
+  return(FALSE)
 }
 ```
 

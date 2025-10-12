@@ -33,15 +33,19 @@ the division operation.
 
 ``` r
 prod_array <- function(nums){
-  # vector with the result
-  result <- c()
+  # reverse of the vector 
+  nums_rev <- rev(nums)
+  leng_nums <- length(nums)
   
-  for (i in 1:length(nums)) {
-    # in each iteration, delete the nums[i]
-    alt_num <- nums[-i]
-    # obtain the product 
-    result[i] <- prod(alt_num)
-  }
+  # calculate for each i:
+    # for the i element the product is defined by product 
+    # of elements 1 to i-1 (left_p) and the product of the 
+    # elements i+1 to the last (right_p)
+  left_p <- c(1,cumprod(nums[-leng_nums]))
+  right_p <-c(1,cumprod(nums_rev[-leng_nums]))
+  
+  
+  result <- left_p * rev(right_p)
   return(result)
 }
 ```
